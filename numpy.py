@@ -4,7 +4,7 @@ import streamlit as st
 # ----------------------------
 # Initialize session state
 # ----------------------------
-if "board" not in st.session_state:
+if "board" not in st.session_state:  
     st.session_state.board = np.zeros((3, 3), dtype=int)
     st.session_state.current = 1       # 1 = X, -1 = O
     st.session_state.result = None
